@@ -1,26 +1,32 @@
-// 1 - 1 a 10
-
-for (let i = 1; i <= 10; i++) {
-	console.log(i)
+function msg() {
+  console.log('Exercício 04 - Funções')
 }
 
-// 2 - 10 a 1
+msg()
 
-// let i = 10;
+function myName(firstName) {
+  console.log(`Primeiro nome: ${firstName}`)
+}
 
-// while (i >= 1) {
-// 	console.log(i);
-// 	i--;
-// }
+myName('Brenda')
 
-// 3 - impares 1 a 100
+function info(name, age, musicStyle) {
+  console.log(`Nome: ${name}\nIdade: ${age}\nEstilo musical: ${musicStyle}`)
+}
 
-// for (let i = 1; i <= 100; i += 2) {
-// 	console.log(i);
-// }
+info('Brenda Silva', 14, 'Rock')
 
-// 4 - pares 0 a 100 
+function recommendation(movie, music) {
+  console.log(`Recomendações:\nFilme: ${movie}\nMúsica: ${music}`)
+}
 
-// for (let i = 0; i <= 100; i += 2) {
-// 	console.log(i);
-// }
+recommendation('Silence Voice', 'P.Y.O.B.')
+
+function triple(x) {
+  x = x * 3
+  return x
+}
+
+let value = 14
+
+console.log(`Triplo de ${value} é ${triple(value)}`)
