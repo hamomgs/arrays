@@ -1,32 +1,34 @@
-function msg() {
-  console.log('Exercício 04 - Funções')
-}
+// Crie um array que receba 5 itens e exiba no console.
 
-msg()
+let games = ['Minecraft', 'Arena of Valor', 'League of Legends', 'Valorant', 'Genshin Impact']
+console.log(games)
 
-function myName(firstName) {
-  console.log(`Primeiro nome: ${firstName}`)
-}
+// Utilize um método para adicionar um nome ao inicio do array.
 
-myName('Brenda')
+games.unshift('Overwatch')
+console.log(games)
 
-function info(name, age, musicStyle) {
-  console.log(`Nome: ${name}\nIdade: ${age}\nEstilo musical: ${musicStyle}`)
-}
+// Utilize um método para remover o último nome do array.
 
-info('Brenda Silva', 14, 'Rock')
+games.pop()
+console.log(games)
 
-function recommendation(movie, music) {
-  console.log(`Recomendações:\nFilme: ${movie}\nMúsica: ${music}`)
-}
+// Utilize um método para adicionar dois nomes ao fim do array.
 
-recommendation('Silence Voice', 'P.Y.O.B.')
+games.push('Fall Guys', 'Gotham Knights')
+console.log(games)
 
-function triple(x) {
-  x = x * 3
-  return x
-}
+// Utilize um método para remover o primeiro nome do array.
 
-let value = 14
+games.shift()
+console.log(games)
 
-console.log(`Triplo de ${value} é ${triple(value)}`)
+// Utilize um método para organizar em ordem crescente o seguinte array:
+
+let numbers = [7,5,6,3,8,9,2,1,4]
+
+numbers.sort(function(a, b) {
+  return a-b
+})
+
+console.log(numbers)
